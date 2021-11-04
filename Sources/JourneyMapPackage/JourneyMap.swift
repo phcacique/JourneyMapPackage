@@ -19,6 +19,10 @@ public struct JourneyMap: View {
     var circleSize: CGFloat = 16
     var fontSize: CGFloat = 12
     
+    public init(data: JourneyMapModel){
+        self.data = data
+    }
+    
     public var body: some View{
         ZStack{
             Web(divisions: data.skills.count, levels: 6)
