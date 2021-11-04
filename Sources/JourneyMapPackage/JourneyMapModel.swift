@@ -30,4 +30,10 @@ public struct Skill{
     var name: String
     var value: Float
     var color: Color
+    
+    public init(name: String, value: Float, color: Color){
+        self.name = name
+        self.value = value
+        self.color = color
+    }
 }
